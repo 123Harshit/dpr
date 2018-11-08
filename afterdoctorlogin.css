@@ -1,0 +1,232 @@
+nav{
+	background-color:#03122A;
+	height: 100px;
+	margin-bottom:20px;
+	width:100%;
+}
+html{
+	height:100%;
+	
+}
+body{
+	background-color: #ECEFF4;
+	height: 100%;	
+    position:relative;
+}
+#main{
+	background-color: #ECEFF4;
+	overflow-x: hidden;
+	padding-top:100px;
+	padding-bottom:200px;
+	position:relative;
+    max-height: 170px
+}
+#appform{
+	border:1px #03122A solid;
+	width:30%;
+	float:left;
+	border-radius:10px;
+	text-align:center;
+    position:relative;
+    left:200px;
+      padding-bottom:20px;
+      animation-name:forml;
+      animation-duration: 2s;
+      animation-fill-mode: forwards;
+}
+@keyframes forml 
+{
+	0%{left:-500px;}
+	100%{left:200px;}
+}
+#appform h3{
+	color:#03122A;
+}
+input[type="date"]{
+    margin-bottom:20px;
+    background-color:#ECEFF4;
+    border:1px #03122A dotted;
+    border-radius:10px;
+    padding-left:50px;
+}
+input[type="submit"]{
+    background-color:#03122A;
+    color:#ECEFF4;
+    width:100px;
+    border-radius:15px; 
+	}
+#surform{
+	border:1px #03122A solid;
+	width:30%;
+	float:right;
+	border-radius:10px;
+	text-align:center;
+    position:absolute;
+    right:200px;
+    padding-bottom:20px;
+      animation-name:formr;
+      animation-duration: 2s;
+      animation-fill-mode: forwards;
+} 
+@keyframes formr 
+{
+	0%{right:-500px;}
+	100%{right:200px;}
+}
+#surform h3{
+	color:#03122A;
+}
+input{
+	   animation-name:inp;
+      animation-duration: 3s;
+      animation-fill-mode: forwards;
+      animation-timing-function:ease-in;
+}
+@keyframes inp 
+{
+	0%{opacity:0;}
+	50%{opacity: 0;}
+	100%{opacity:1;}
+}
+footer{
+	background-color: #A9A9A9;
+	margin-top:40px;
+	width:100%;
+    min-height:70px;
+    padding-top:6px; 
+    padding-left: 25px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position:absolute;
+    bottom:-10px; 
+}
+#footl{
+	float:left;
+   width:20%:;
+}
+footer h4{
+	color:#03122A;
+}
+#footr{
+	position:relative;
+	float: right;
+	width:80%;
+}
+#fb{
+	width:40px;
+	height:40px;
+	background-image:url(facebook2.png);
+	background-position: center;
+	border-radius: 20px;
+	border:0px;
+	position: absolute;
+
+	left:750px;
+	top:10px;
+	box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+}
+#fb:hover{
+		background-image:url(facebook.png);
+	background-position: center;
+}
+#tw{
+	width:40px;
+	height:40px;
+	background-image:url(twitter.png);
+	background-position: center;
+	border-radius: 20px;
+    border:0px;
+	position: absolute;
+	left:800px;
+	top:10px;
+	box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+}
+#tw:hover{
+		background-image:url(twitter2.png);
+	background-position: center;
+}
+#in{
+	width:40px;
+	height:40px;
+	background-image:url(LinkedIn.png);
+	background-position: center;
+	border-radius: 20px;
+    border:0px;
+	position: absolute;
+	left:850px;
+	top:10px;
+	box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+	
+}
+#in:hover{
+		background-image:url(LinkedIn2.png);
+	background-position: center;
+}
+
+@media(max-width:1200px)
+{
+	#footl{
+		float:left;
+		width: auto;
+		position:relative;
+	
+	}
+	#footr{
+		float:right;
+		width:auto;
+		margin-right: 50px;	
+	}
+
+	#fb,#tw,#in{
+		position:relative;
+		left:auto;
+     }
+
+
+}
+@media(max-width:500px)
+{
+		#footl{
+		float:none;
+		text-align:center; 	
+	}
+	#footr{
+		float:none;
+		text-align:center; 
+		margin-top:0px;
+		padding-top:0px;
+	
+	}
+	#fb,#in,#tw{
+		top:0px;
+	}
+}
+@media(max-width:1100px)
+{
+	#main{
+		padding-top:40px;
+		padding-bottom:180px;
+		overflow-y: hidden;
+	}
+	#appform{
+		float:none;
+		position: relative;
+		width:80%;
+		left:auto;
+		right: auto;
+		animation: none;
+		margin: auto;
+		margin-bottom:10px; 
+	}
+	#surform{
+		position:relative;
+		float:none;
+	    width: 80%;
+	    left: auto;
+	    right:auto;
+		animation: none;
+		margin: auto;
+
+	}
+
+}
