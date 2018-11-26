@@ -1,0 +1,190 @@
+nav{
+	background-color:#03122A;
+	height: 100px;
+	margin-bottom:20px;
+	width:100%;
+}
+html{
+}
+body{
+	background-color: #ECEFF4;
+    position:relative;
+
+}
+#main{
+padding-bottom: 10px;
+}
+#schedform{
+	color:#03122A;
+	margin:auto;
+	border:1px #03122A solid;
+	text-align: center;
+	width:22%;
+	border-radius:5px;
+	padding-bottom:10px;
+	margin-top:40px;
+	margin-bottom:20px;
+}
+#schedform input[type="submit"]
+{
+	background-color:#03122A;
+	color:#ECEFF4;
+	width:75PX;
+}
+#uprepform{
+	color:#03122A;
+	margin:auto;
+	border:1px #03122A solid;
+	width:50%;
+	text-align:center;
+	border-radius:5px;
+	margin-top: 10px;
+	padding-bottom:25px;
+	padding-top:10px;
+}
+#uprepform input[type="text"]{
+	margin-bottom:5px;
+	border-radius:10px;
+	text-align: center;
+}
+#sb3{
+	margin-bottom:5px;
+	margin-top:10px;
+	background-color:#03122A;
+	color:#ECEFF4;
+	width:100px;
+	border-radius:10px;
+}
+#uplform{
+	text-align:center;
+	border:2px #03122A dotted; 
+	padding:5px;
+	max-width:50%;
+	min-width:180px;
+	margin:auto;
+	border-radius:10px;
+	margin-top:10px;
+}
+#uplform input{
+	width:auto;
+	margin: auto;
+	margin-bottom: 2px;
+}
+#uplform label{
+	width:auto;
+	margin-bottom: 4px;
+	text-overflow: clip;
+	font-weight:bold; 
+}
+footer{
+	background-color: #A9A9A9;
+	margin-top:40px;
+	width:100%;
+    min-height:70px;
+    padding-top:6px; 
+    padding-left: 25px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position:absolute;
+    
+}
+#footl{
+	float:left;
+   width:20%:;
+}
+footer h4{
+	color:#03122A;
+}
+#footr{
+	position:relative;
+	float: right;
+	width:80%;
+}
+#fb{
+	width:40px;
+	height:40px;
+	background-image:url(facebook2.png);
+	background-position: center;
+	border-radius: 20px;
+	border:0px;
+	position: absolute;
+
+	left:750px;
+	top:10px;
+	box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+}
+#fb:hover{
+		background-image:url(facebook.png);
+	background-position: center;
+}
+#tw{
+	width:40px;
+	height:40px;
+	background-image:url(twitter.png);
+	background-position: center;
+	border-radius: 20px;
+    border:0px;
+	position: absolute;
+	left:800px;
+	top:10px;
+	box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+}
+#tw:hover{
+		background-image:url(twitter2.png);
+	background-position: center;
+}
+#in{
+	width:40px;
+	height:40px;
+	background-image:url(LinkedIn.png);
+	background-position: center;
+	border-radius: 20px;
+    border:0px;
+	position: absolute;
+	left:850px;
+	top:10px;
+	box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+	
+}
+#in:hover{
+		background-image:url(LinkedIn2.png);
+	background-position: center;
+}
+@media(max-width:1200px)
+{
+	#footl{
+		float:left;
+		width: auto;
+		position:relative;
+	
+	}
+	#footr{
+		float:right;
+		width:auto;
+		margin-right: 50px;	
+	}
+
+	#fb,#tw,#in{
+		position:relative;
+		left:auto;
+     }
+
+
+}
+@media(max-width:500px)
+{
+		#footl{
+		float:none;
+		text-align:center; 	
+	}
+	#footr{
+		float:none;
+		text-align:center; 
+		margin-top:0px;
+		padding-top:0px;
+	
+	}
+	#fb,#in,#tw{
+		top:0px;
+	}
+}

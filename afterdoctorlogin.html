@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="afterdoctorlogin.css">
+	<link rel="stylesheet" type="text/css" href="afterdoctorslogin.css">
 </head>
 <body>
 
@@ -13,7 +13,7 @@
 <form action="afterdoctorlogincheckappointment.php" method="post" id="form1">
 	<input type="date" name="apptcheckdate" id="apptcheckdate">
 	<br>
-	<input type="submit" name="submitbutton" value="Check">
+	<input type="submit" name="submitbutton1" value="Check">
 </form>
 </div>
 <div id="surform">
@@ -21,7 +21,15 @@
 <form action="afterdoctorloginchecksurgery.php" method="post" id="form2">
 	<input type="date" name="surcheckdate" id="surcheckdate">
 	<br>
-	<input type="submit" name="submitbutton" value="Check"> 
+	<input type="submit" name="submitbutton2" value="Check"> 
+</form>
+</div>
+<div id="labrepform">
+	<h3>Check patient reports: </h3>
+<form action="checkpatrep.php" method="post" id="form3">
+	<input type="text" name="patid" id="pid" placeholder="Pid">
+	<br>
+	<input type="submit" name="submitbutton3" value="Check"> 
 </form>
 </div>
 </section>

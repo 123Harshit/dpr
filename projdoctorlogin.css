@@ -70,9 +70,9 @@ body{
 	margin-left:75px;
 	margin-right: 75px;
 }
-::placeholder{
-color:#03122A;
-}
+	::placeholder{
+	color:#03122A;
+	}
 #doctoreid:focus + #l1{
  background:#6495ED;
 }
@@ -107,7 +107,7 @@ color:#03122A;
    width:60%;
 	margin-left:75px;
 	margin-right: 75px;
-
+  
 
 }
 #submit:hover{

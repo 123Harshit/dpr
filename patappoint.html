@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<form name="patientappointment" action="" method="post">
+</form>
+<p>hi</p>
+</body>
+</html>
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$db="patient";
+//$db=$_SESSION[""];
+$conn = new mysqli($servername, $username, $password, $db);
+// Check connection
+if (mysqli_connect_errno()) 
+{
+    die("Connection failed: " . mysqli_connect_error());
+} 
+$sql = "SELECT * FROM doctors.schedule";
+ $result = $conn->query($sql);
+ if ($result->num_rows >0) {
+      echo '<table border="5px">';
+    // output data of each row
+      echo '<tr>';
+         echo '<td>'. "EID".'</td>';
+        echo '<td>'."DAY".'</td>';
+        echo '<td>'."FROM".'</td>';
+        echo '<td>'. "TO".'</td>';
+        echo '<td>'. "ROOM".'</td>';
+        echo '</tr>';
+    while($row = $result->fetch_assoc()) {
+    	echo '<tr>';
+        echo '<td>'. $row['eid'] .'</td>';
+        echo '<td>'. $row['day'] .'</td>';
+        echo '<td>'. $row['fromtime'] .'</td>';
+        echo '<td>'. $row['totime'] .'</td>';
+        echo '<td>'. $row['roomno'] .'</td>';
+        echo '</tr>';
+    }
+    echo '</table>';
+  }
+
+?>

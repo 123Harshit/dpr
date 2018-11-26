@@ -1,9 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<link rel="stylesheet" type="text/css" href="projdoctorlogin.css">
-</head>
-<body>
+<HTML><HEAD>
+<TITLE>Staff Login Page</TITLE>
+<link rel="stylesheet" type="text/css" href="projdoctorlogin.css">
+</HEAD>
+
+<BODY>
 	
 <nav></nav>
 <section id="main">
@@ -12,19 +12,19 @@
 		<img src="dbprlogo.png" alt="PraHar Hospital" id="logo">
 		<h3 id="signin">Sign in</h3>
 		<br>
-		<form name="doctorloginform" action="projectdoctorslogin.php" method="post" id="doctorloginform">
+		<form name="doctorloginform" action="stafflogin.php" method="post" id="doctorloginform">
 			
-			<input type="text" name="doctoreid" id="doctoreid" class="inp" placeholder="Eid">
+			<input type="text" name="sid" id="doctoreid" class="inp" placeholder="Sid">
 			<hr id="l1" class="line">
 			<br>
-			<input type="password" name="doctorpassword" id="doctorpassword" class="inp" placeholder="Password">
+			<input type="password" name="password" id="doctorpassword" class="inp" placeholder="Password">
 			<hr id="l2" class="line">
 			<br>
 			<input type="submit" value="Login" id="submit"> 
 			<br>
 			<a href="#" id="forgotpass">Trouble signing in?</a>
 			<br>
-			<input type="checkbox" name="keeploggedin" id="keeploggedin" value="Keep me logged in"><label id="keepli">Stay signed in</label>
+			<input type="checkbox" name="keeploggedin" id="keeploggedin" value="Keep me logged in"><label id="keepli">Stay signed in in</label>
 		</form>
 	</div>
 	
@@ -41,5 +41,6 @@
     </div>
 
 </footer>
-</body>
-</html>
+
+</BODY>
+</HTML>
